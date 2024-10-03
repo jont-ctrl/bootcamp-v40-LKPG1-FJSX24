@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kundvagn - Webbshop för Datorspel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="kundvagn.js" defer></script>
+    <!-- Kopplar den externa JavaScript-filen -->
+  </head>
+  <body>
+    <div class="cart-container">
+      <h1>Kundvagn</h1>
+
+      <div id="cart-items">
+        <!-- Exempel på en vara -->
+        <div class="cart-item">
+          <div class="item-details">
+            <img src="game1.jpg" alt="Spel 1" class="item-image" />
+            <div>
+              <div class="item-name">Spel 1</div>
+              <div class="item-price">399 kr</div>
+            </div>
+          </div>
+          <div class="item-quantity">Antal: 1</div>
+          <button class="remove-button" onclick="removeItem(this)">
+            Ta bort
+          </button>
+        </div>
+
+        <div class="cart-item">
+          <div class="item-details">
+            <img src="game2.jpg" alt="Spel 2" class="item-image" />
+            <div>
+              <div class="item-name">Spel 2</div>
+              <div class="item-price">499 kr</div>
+            </div>
+          </div>
+          <div class="item-quantity">Antal: 1</div>
+          <button class="remove-button" onclick="removeItem(this)">
+            Ta bort
+          </button>
+        </div>
+      </div>
+
+      <!-- Totalsumma -->
+      <div class="total">Total: 898 kr</div>
+
+      <a href="betalning.html" class="checkout-button">Till Betalning</a>
+    </div>
+  </body>
+</html>
