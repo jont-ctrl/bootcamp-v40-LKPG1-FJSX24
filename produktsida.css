@@ -72,3 +72,16 @@ h1 {
 .add-to-cart-btn:hover {
     background-color: #2980B9;
 }
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+
+/* Media query för mindre skärmar */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}

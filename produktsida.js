@@ -1,4 +1,5 @@
 function sortProducts() {
+    console.log("Sorteringsfunktion körs");
     const grid = document.getElementById('product-grid');
     const products = Array.from(grid.getElementsByClassName('product'));
 
@@ -15,6 +16,6 @@ function sortProducts() {
     });
 
     // Rensa och återmontera produkterna i rätt ordning
-    grid.innerHTML = '';
-    products.forEach(product => grid.appendChild(product));
+    grid.innerHTML = ''; // Rensa grid
+    products.forEach(product => grid.appendChild(product)); // Återmontera produkterna
 }
