@@ -57,6 +57,19 @@ h1 {
   text-align: right;
 }
 
+.remove-button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
 .checkout-button {
   display: block;
   width: 100%;
