@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive typography with clamp for titles */
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive between 1.5rem and 3rem based on viewport */
+}
+
+h2 {
+    font-size: clamp(1.2rem, 3vw, 2rem); /* Responsive between 1.2rem and 2rem based on viewport */
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Desktop (3-column) layout */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr 1fr; /* Left: 1 fraction, Middle: 2 fractions, Right: 1 fraction */
+    }
+}
+
+/* Mobile (1-column) layout */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
+
+.grid-container > section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
