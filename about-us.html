@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About  us</title>
+    <meta name="description" content="About Us sida som är tillgänglig och responsiv.">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about-us.css">
 </head>
 <body>
+    <!-- Huvudrubrik -->
+    <header>
+        <h1 class="page-title" aria-labelledby="about-title">Om Oss</h1>
+    </header>
 
-    <header>Abous us</header>
+    <!-- Fyrkantig ram med huvudtext -->
+    <section class="about-section" aria-labelledby="about-description">
+        <div class="info-box" role="region" aria-label="Vår berättelse">
+            <h2 id="about-description">Välkommen till vår About Us-sida</h2>
+            <p>Vi är ett företag som fokuserar på hållbarhet och innovation. Vårt mål är att göra världen lite bättre varje dag.</p>
+        </div>
+    </section>
 
-    <nav>  </nav>
-    
+    <!-- Bildspel med bilder -->
+    <section class="image-slider" aria-labelledby="gallery">
+        <h2 id="gallery" class="visually-hidden">Galleri</h2>
+        <div class="slider" role="region" aria-label="Galleri över vårt arbete">
+            <img src="image1.jpg" alt="Bild av vårt kontor" class="responsive-img">
+            <img src="image2.jpg" alt="Bild av vårt team" class="responsive-img">
+        </div>
+    </section>
+
+    <!-- Fyrkantig ram med historietext -->
+    <section class="history-section" aria-labelledby="history-description">
+        <div class="info-box" role="region" aria-label="Vår historia">
+            <h2 id="history-description">Vår Historia</h2>
+            <p>Vårt företag startade 2010 med en vision om att förändra sättet vi ser på hållbarhet och innovation.</p>
+        </div>
+    </section>
+
+    <!-- Tillgänglighetsverktyg för navigering -->
+    <nav aria-label="Huvudnavigering">
+        <ul>
+            <li><a href="#about-description">Till Vår Berättelse</a></li>
+            <li><a href="#gallery">Till Galleri</a></li>
+            <li><a href="#history-description">Till Vår Historia</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
