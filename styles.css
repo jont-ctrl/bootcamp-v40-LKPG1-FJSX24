@@ -13,46 +13,6 @@ body {
     padding: 20px;
 }
 
-/* Header and Navigation Styles */
-header {
-    background-color: #1c1c1c;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-}
-
-.logo {
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a, nav ul li input {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    background-color: transparent;
-    border: none;
-}
-
-nav ul li input {
-    background-color: #333;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #fff;
-}
-
 /* Carousel Styles */
 .carousel {
     width: 100%;
@@ -168,29 +128,6 @@ nav ul li input {
 .offer-details h3 {
     font-size: 2.5em;
     margin-bottom: 20px;
-}
-
-/* Footer Section */
-footer {
-    background-color: #1c1c1c;
-    color: #fff;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-footer .newsletter input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 10px;
 }
 
 .chatbot {
