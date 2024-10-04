@@ -1,25 +1,31 @@
-function removeItem(button) {
-  // Hämta raden som ska tas bort
-  const cartItem = button.parentElement;
+document.addEventListener('DOMContentLoaded', loadCart);
+
+function loadCart() {
   const cartItemsContainer = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
 
-  // Ta bort varan från kundvagnen
-  cartItemsContainer.removeChild(cartItem);
+  // Hämta kundvagnen från localStorage
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-  // Uppdatera totalsumman
-  updateTotal();
-}
+  // Tomma kundvagnens innehåll först
+  cartItemsContainer.innerHTML = '';
 
-function updateTotal() {
-  const totalElement = document.querySelector('.total');
-  const cartItems = document.querySelectorAll('.cart-item');
-  let total = 0;
+  let totalPrice = 0;
 
-  cartItems.forEach((item) => {
-    const priceText = item.querySelector('.item-price').innerText;
-    const price = parseInt(priceText.replace(' kr', ''), 10);
-    total += price;
+  // Lägg till varje produkt i kundvagnen
+  cart.forEach((item) => {
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('cart-item');
+    productDiv.innerHTML = `
+            <h3>${item.name}</h3>
+            <p>${item.price} kr</p>
+        `;
+
+    cartItemsContainer.appendChild(productDiv);
+
+    // Beräkna totalpriset
+    totalPrice += parseFloat(item.price);
   });
 
-  totalElement.innerText = 'Total: ' + total + ' kr'; // Uppdatera med korrekt totalsumma
+  totalPriceElement.textContent = `${totalPrice} kr`;
 }
