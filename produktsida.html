@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkter - Spelbutik</title>
-    <link rel="stylesheet" href="produktsida.css"> <!-- Lägg till länk till din CSS-fil -->
-    <script src="produktsida.js" defer></script> <!-- Använd defer för att säkerställa att scriptet laddas efter HTML -->
+    <link rel="stylesheet" href="produktsida.css">
+    <script src="produktsida.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -20,98 +20,29 @@
             </select>
         </div>
         
-        <div id="product-grid" class="product-grid"> <!-- Ändrat till id "product-grid" -->
-            <div class="product" data-name="Spelvara 1" data-price="299" data-category="kategori1">
+        <div id="product-grid" class="product-grid">
+            <div class="product" data-name="Spelvara 1" data-price="299" data-original-price="588" data-category="kategori1">
                 <img src="produkt1.jpg" alt="Produkt 1">
                 <h3>Spelvara 1</h3>
                 <p>Beskrivning av spelvaran.</p>
                 <p class="price">299 kr</p>
+                <p class="original-price">588 kr</p>
                 <button class="add-to-cart-btn">Lägg till i kundvagn</button>
             </div>
-            <div class="product" data-name="Spelvara 2" data-price="199" data-category="kategori2">
+            <div class="product" data-name="Spelvara 2" data-price="199" data-original-price="388" data-category="kategori2">
                 <img src="produkt2.jpg" alt="Produkt 2">
                 <h3>Spelvara 2</h3>
                 <p>Beskrivning av spelvaran.</p>
                 <p class="price">199 kr</p>
+                <p class="original-price">388 kr</p>
                 <button class="add-to-cart-btn">Lägg till i kundvagn</button>
             </div>
-            <div class="product" data-name="Spelvara 3" data-price="399" data-category="kategori1">
+            <div class="product" data-name="Spelvara 3" data-price="399" data-original-price="688" data-category="kategori1">
                 <img src="produkt3.jpg" alt="Produkt 3">
                 <h3>Spelvara 3</h3>
                 <p>Beskrivning av spelvaran.</p>
                 <p class="price">399 kr</p>
+                <p class="original-price">688 kr</p>
                 <button class="add-to-cart-btn">Lägg till i kundvagn</button>
             </div>
-            <div class="product" data-name="Spelvara 4" data-price="259" data-category="kategori2">
-                <img src="produkt4.jpg" alt="Produkt 4">
-                <h3>Spelvara 4</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">259 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 5" data-price="349" data-category="kategori1">
-                <img src="produkt5.jpg" alt="Produkt 5">
-                <h3>Spelvara 5</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">349 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 6" data-price="429" data-category="kategori2">
-                <img src="produkt6.jpg" alt="Produkt 6">
-                <h3>Spelvara 6</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">429 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 7" data-price="299" data-category="kategori1">
-                <img src="produkt7.jpg" alt="Produkt 7">
-                <h3>Spelvara 7</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">299 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 8" data-price="249" data-category="kategori2">
-                <img src="produkt8.jpg" alt="Produkt 8">
-                <h3>Spelvara 8</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">249 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 9" data-price="379" data-category="kategori1">
-                <img src="produkt9.jpg" alt="Produkt 9">
-                <h3>Spelvara 9</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">379 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 10" data-price="199" data-category="kategori2">
-                <img src="produkt10.jpg" alt="Produkt 10">
-                <h3>Spelvara 10</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">199 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 11" data-price="499" data-category="kategori1">
-                <img src="produkt11.jpg" alt="Produkt 11">
-                <h3>Spelvara 11</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">499 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-            <div class="product" data-name="Spelvara 12" data-price="199" data-category="kategori2">
-                <img src="produkt12.jpg" alt="Produkt 12">
-                <h3>Spelvara 12</h3>
-                <p>Beskrivning av spelvaran.</p>
-                <p class="price">199 kr</p>
-                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
-            </div>
-        </div>
-
-        <label for="priceRange">Filtrera efter pris:</label>
-        <select id="priceRange" onchange="filterProducts()">
-            <option value="all">Alla</option>
-            <option value="0-199">0 - 199 kr</option>
-            <option value="200-399">200 - 399 kr</option>
-            <option value="400-599">400 - 599 kr</option>
-        </select>
-    </div>
+        
