@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktivitet</title>
+    <title>Gaming Tävlingar & LAN Events</title>
     <link rel="stylesheet" href="aktivitet.css">
 </head>
 <body>
-    <header>
-        <h1>Katedral aktiviteter</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Tävlingar</a></li>
+            <li><a href="#">LAN & Events</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Spela och Vinn Stora Priser!</h1>
+        <p>Delta i våra storslagna gaming turneringar och LAN-evenemang.</p>
     </header>
 
-    <main class="grid-container">
-        <section class="left-column">
-            <h2>Talangjakt!</h2>
-            <p>Talangjakt!! Visa upp vad just du kan göra, som ingen annan kan på LANBIT Light 2024.
+    <!-- Tournament Information Section -->
+    <section class="about-tournaments">
+        <h2>Turneringar och LAN</h2>
+        <p>
+            Våra turneringar samlar spelare från hela landet för episka strider i de populäraste spelen. Oavsett om du är en erfaren spelare eller bara vill ha kul, finns det något för alla! Var med i våra LAN-event där spelare kan mötas, tävla och njuta av gaming gemenskapen. Anmäl dig idag och var en del av nästa stora turnering!
+        </p>
+        <img class="LAN" src="images-aktivitet\gaminglan.jpg" alt="LAN">
+        <img class="Winner" src="images-aktivitet\winnerimage.jpg" alt="winner">
+        
+    </section>
 
-              Anmäl dig redan nu, på bokningssidan!
-              Har du inte köpt biljetter ännu? Gör det nu också, på bokningssidan.
-              
-              TAGGA LAN!!!.</p>
-        </section>
+    <!-- Activities Section -->
+    <section class="activities">
+        <h2>Kommande Tävlingar & LAN</h2>
+        <div class="activity">
+            <img src="images-aktivitet\CS2.png" alt="Tävling 1">
+            <div class="info">
+                <h3>Turnering: CS2</h3>
+                <p>Datum: 15 Okt 2024</p>
+                <p>Pris: Komplett Gaming Dator Setup</p>
+                <button>Boka Din Plats</button>
+            </div>
+        </div>
+        <div class="activity">
+            <img src="images-aktivitet\overwatchtournament.jpg" alt="LAN Event 1">
+            <div class="info">
+                <h3>LAN Party: Overwatch</h3>
+                <p>Datum: 5 Nov 2024</p>
+                <p>Pris: Logitech mus</p>
+                <button>Registrera Dig</button>
+            </div>
+        </div>
+    </section>
 
-        <section class="middle-column">
-            <h2>TURNERING</h2>
-            <p>Vi arrangerar ett episkt gamingevent med turneringar i populära spel som Fortnite, CS2, Valorant och League of Legends. Oavsett om du är proffs eller bara spelar för skoj skull, finns det plats för alla! Förutom spännande matcher kommer vi att ha olika aktiviteter som gaming-stationer där du kan prova nya spel, tävlingar och giveaways. Snacks och dryck kommer att finnas på plats för att hålla dig energifylld under dagen. De bästa spelarna har chansen att vinna grymma priser som gamingheadsets, presentkort och exklusiva merchandise. Det här är ett event du inte vill missa!</p>
-            
-          </section>
-
-        <section class="right-column">
-            <h2>BILJETTER</h2>
-            <p>Här kan du köpa biljetter till LAN och annat.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 My Website</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Gaming e-handel. Alla rättigheter förbehållna.</p>
     </footer>
 </body>
 </html>

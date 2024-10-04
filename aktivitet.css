@@ -1,3 +1,4 @@
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,59 +6,147 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+    color: #f5a623;
+}
+
+.header p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+/* About Tournaments Section */
+.about-tournaments {
+    background-color: #181818;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.LAN {
+    width: 600px;
+}
+
+.winner {
+    width: 600px;
+}
+
+
+.about-tournaments h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #f5a623;
+    margin-bottom: 1rem;
+}
+
+.about-tournaments p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #e0e0e0;
     line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+/* Activities Section */
+.activities {
+    padding: 2rem;
+    background-color: #202020;
+    margin: 2rem 0;
+}
+
+.activities h2 {
     text-align: center;
-    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #f5a623;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Responsive typography with clamp for titles */
-h1 {
-    font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive between 1.5rem and 3rem based on viewport */
-}
-
-h2 {
-    font-size: clamp(1.2rem, 3vw, 2rem); /* Responsive between 1.2rem and 2rem based on viewport */
-}
-
-/* Grid container */
-.grid-container {
+.activity {
     display: grid;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Desktop (3-column) layout */
+.activity img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info h3 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin-bottom: 0.5rem;
+    color: #f5a623;
+}
+
+.info p {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+button {
+    background-color: #f5a623;
+    color: #222;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d48821;
+}
+
+/* Responsive Layout */
 @media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr 2fr 1fr; /* Left: 1 fraction, Middle: 2 fractions, Right: 1 fraction */
+    .activity {
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
     }
 }
 
-/* Mobile (1-column) layout */
-@media (max-width: 767px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column */
-    }
-}
-
-.grid-container > section {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+/* Footer */
+.footer {
+    background-color: #222;
+    text-align: center;
+    padding: 1rem;
+    color: #888;
 }
