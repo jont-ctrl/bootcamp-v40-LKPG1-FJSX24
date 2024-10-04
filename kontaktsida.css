@@ -1,0 +1,48 @@
+/* Kontaktsida specifik stil */
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto; /* Lägg till avstånd ovanför och nedanför */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Formulärstil */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Avstånd mellan fälten */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #333; /* Färgen på fokus */
+    outline: none; /* Ta bort standardkontur */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* Ändra färg vid hover */
+}
