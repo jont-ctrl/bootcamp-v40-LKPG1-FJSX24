@@ -83,6 +83,14 @@ h1 {
     margin-bottom: 20px; /* Justera detta värde för att flytta upp sorteringsmenyn */
 }
 
+.product img {
+    width: 50%; /* Halvera bredden */
+    height: auto; /* Bevara bildens proportioner */
+    display: block; /* Gör att bilden tar upp sin egna rad */
+    margin: 0 auto; /* Centrera bilden horisontellt */
+    border-radius: 10px;
+}
+
 
 /* Media query för mindre skärmar */
 @media (max-width: 600px) {
