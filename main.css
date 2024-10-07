@@ -138,3 +138,20 @@ footer a:focus {
     content: ''; /* Tar bort vertikala streck på små skärmar */
   }
 }
+
+button{
+  background-color: #3C00FF;  !important;
+  color: white;
+}
+
+.button  {
+  background-color: #3C00FF;
+}
+
+.add-to-cart-btn{
+  background-color: #3C00FF;
+}
+
+#checkout-btn{
+  background-color: #3C00FF;
+}
