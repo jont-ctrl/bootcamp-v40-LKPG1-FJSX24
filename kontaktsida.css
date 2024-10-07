@@ -1,0 +1,70 @@
+
+main {
+    margin-top: 30px;  /* Lägger till mellanrum från navigeringen */
+    margin-bottom: 30px; /* Lägger till mellanrum från footern */
+  }
+
+ section {
+    text-align: left;
+    margin-top: 20px;  /* Lägger till mellanrum från navigationen */
+    margin-bottom: 20px;  /* Lägger till mellanrum från footern */
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #57c4e5;
+    margin-bottom: 10px;
+  }
+  
+  form p {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #a1a1a1;
+    border-radius: 4px;
+    background-color: #cfcfcf;
+    color: #ddd;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #57c4e5;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #393939;
+  }
+  
+  /* Skicka-knapp */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #57c4e5;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a2b3;
+  }
+  
+  button:focus {
+    outline: none;
+    background-color: #45a2b3;
+  }
