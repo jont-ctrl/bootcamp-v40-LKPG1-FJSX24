@@ -1,48 +1,70 @@
-/* Kontaktsida specifik stil */
+
 main {
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto; /* Lägg till avstånd ovanför och nedanför */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+    margin-top: 30px;  /* Lägger till mellanrum från navigeringen */
+    margin-bottom: 30px; /* Lägger till mellanrum från footern */
+  }
 
-/* Formulärstil */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Avstånd mellan fälten */
-}
-
-label {
+ section {
+    text-align: left;
+    margin-top: 20px;  /* Lägger till mellanrum från navigationen */
+    margin-bottom: 20px;  /* Lägger till mellanrum från footern */
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #57c4e5;
+    margin-bottom: 10px;
+  }
+  
+  form p {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
+  }
+  
+  input, textarea {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border: 2px solid #a1a1a1;
     border-radius: 4px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #333; /* Färgen på fokus */
-    outline: none; /* Ta bort standardkontur */
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #333;
+    background-color: #cfcfcf;
+    color: #ddd;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #57c4e5;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #393939;
+  }
+  
+  /* Skicka-knapp */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #57c4e5;
     color: #fff;
+    font-size: 1.2em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #555; /* Ändra färg vid hover */
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a2b3;
+  }
+  
+  button:focus {
+    outline: none;
+    background-color: #45a2b3;
+  }
