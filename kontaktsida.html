@@ -1,88 +1,123 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gamer Katedralen - Kontakt</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="kontaktsida.css">
-</head>
-<body>
-
-     <!-- Header med bakgrundsbild och centrerad rubrik -->
-     <header>
-        <div class="header-image" role="banner" aria-label="Välkommen till vår webbplats">
-            <h1 class="header-title">Gamer katedralen</h1>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamer Katedralen - Kontakt</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="kontaktsida.css" />
+  </head>
+  <body>
+    <!-- Header med bakgrundsbild och centrerad rubrik -->
+    <header>
+      <div
+        class="header-image"
+        role="banner"
+        aria-label="Välkommen till vår webbplats"
+      >
+        <h1 class="header-title">Gamer katedralen</h1>
+      </div>
     </header>
     <!-- Navigering -->
     <nav aria-label="Huvudnavigation">
-        <ul class="navigation">
-            <li>
-              <a href="homepage.html" aria-label="Gå till hemsidan">Hemsida</a>
-            </li>
-            <li>
-              <a href="kontaktsida.html" aria-label="Gå till kontaktsidan"
-                >Kontaktsida</a
-              >
-            </li>
-            <li>
-              <a href="produktsida.html" aria-label="Gå till produktsidan"
-                >Produktsida</a
-              >
-            </li>
-            <li>
-              <a href="aktivitet.html" aria-label="Gå till aktivitetssidan"
-                >Aktivitetssida</a
-              >
-            </li>
-            <li class="cart">
-              <a href="kundvagn.html" aria-label="Gå till varukorgen"
-                ><img src="varukorg.png" alt="Varukorg" />Varukorg</a
-              >
-            </li>
-          </ul>
+      <ul class="navigation">
+        <li>
+          <a href="homepage.html" aria-label="Gå till hemsidan">Hemsida</a>
+        </li>
+        <li>
+          <a href="kontaktsida.html" aria-label="Gå till kontaktsidan"
+            >Kontaktsida</a
+          >
+        </li>
+        <li>
+          <a href="produktsida.html" aria-label="Gå till produktsidan"
+            >Produktsida</a
+          >
+        </li>
+        <li>
+          <a href="aktivitet.html" aria-label="Gå till aktivitetssidan"
+            >Aktivitetssida</a
+          >
+        </li>
+        <li class="cart">
+          <a href="kundvagn.html" aria-label="Gå till varukorgen"
+            ><img src="varukorg.png" alt="Varukorg" />Varukorg</a
+          >
+        </li>
+      </ul>
     </nav>
 
-  <main>
-    <section aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Kontakta oss</h2>
-      <p>Fyll i formuläret nedan för att komma i kontakt med oss.</p>
-      
-      <form aria-labelledby="contact-form" id="contact-form">
-        
-        <!-- Namn -->
-        <label for="name">Namn:</label>
-        <input type="text" id="name" name="name" aria-required="true" required placeholder="Ditt namn">
-        
-        <!-- E-post -->
-        <label for="email">E-post:</label>
-        <input type="email" id="email" name="email" aria-required="true" required placeholder="Din e-postadress">
-        
-        <!-- Ämne -->
-        <label for="subject">Ämne:</label>
-        <input type="text" id="subject" name="subject" aria-required="true" required placeholder="Ämne för ditt meddelande">
-        
-        <!-- Meddelande -->
-        <label for="message">Meddelande:</label>
-        <textarea id="message" name="message" aria-required="true" required placeholder="Skriv ditt meddelande här" rows="5"></textarea>
-        
-        <!-- Skicka-knapp -->
-        <button type="submit" aria-label="Skicka meddelande">Skicka</button>
-      
-      </form>
-    </section>
-  </main>
+    <main>
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Kontakta oss</h2>
+        <p>Fyll i formuläret nedan för att komma i kontakt med oss.</p>
 
-  <footer>
-    <address>
+        <form aria-labelledby="contact-form" id="contact-form">
+          <!-- Namn -->
+          <label for="name">Namn:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            aria-required="true"
+            required
+            placeholder="Ditt namn"
+          />
+
+          <!-- E-post -->
+          <label for="email">E-post:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            aria-required="true"
+            required
+            placeholder="Din e-postadress"
+          />
+
+          <!-- Ämne -->
+          <label for="subject">Ämne:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            aria-required="true"
+            required
+            placeholder="Ämne för ditt meddelande"
+          />
+
+          <!-- Meddelande -->
+          <label for="message">Meddelande:</label>
+          <textarea
+            id="message"
+            name="message"
+            aria-required="true"
+            required
+            placeholder="Skriv ditt meddelande här"
+            rows="5"
+          ></textarea>
+
+          <!-- Skicka-knapp -->
+          <button type="submit" aria-label="Skicka meddelande">Skicka</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <address>
         <p>Kontaktinformation:</p>
-        <p>Telefon: <a href="tel:+46701234567" aria-label="Ring oss">+46 70 123 4567</a></p>
-        <p>Email: <a href="mailto:info@example.com" aria-label="Skicka e-post till oss">info@example.com</a></p>
+        <p>
+          Telefon:
+          <a href="tel:+46701234567" aria-label="Ring oss">+46 70 123 4567</a>
+        </p>
+        <p>
+          Email:
+          <a href="mailto:info@example.com" aria-label="Skicka e-post till oss"
+            >info@example.com</a
+          >
+        </p>
         <p>Adress: Exempelvägen 123, 123 45 Exempelstad</p>
-    </address>
- </footer>
-  
-  
-</body>
+      </address>
+    </footer>
+  </body>
 </html>
